@@ -16,10 +16,16 @@ A MySQL database for managing clinic appointments, doctors, patients, and medica
    mysql -u [your_username] -p < clinic_booking_system.sql
    
 📂 Schema Overview
+
 Table	Description
+
 Specialties	Medical fields (e.g., Cardiology)
+
 Doctors	Doctor details with contact info
+
 DoctorSpecialty	Links doctors to specialties (M-M)
+
 Patients	Patient records
+
 Appointments	Bookings with status tracking
-🛠️ Query Examples
+
