@@ -17,15 +17,45 @@ A MySQL database for managing clinic appointments, doctors, patients, and medica
    
 📂 Schema Overview
 
-Table	Description
+Table	                Description
+__________________________________________________________
+Specialties	          Medical fields (e.g., Cardiology)
+__________________________________________________________
+Doctors	             Doctor details with contact info
+__________________________________________________________
+DoctorSpecialty       Links doctors to specialties (M-M)
+__________________________________________________________
+Patients	             Patient records
+__________________________________________________________
+Appointments	       Bookings with status tracking
+__________________________________________________________
 
-Specialties	Medical fields (e.g., Cardiology)
+🛠️ Query Examples
+1. **View all appointments**:
+   ```bash
+   SELECT * FROM Appointments;
+2. **Find doctors with multiple specialties**:
+   ```bash
+   SELECT d.first_name, d.last_name, COUNT(s.specialty_id) AS specialty_count
+   FROM Doctors d
+   JOIN DoctorSpecialty ds ON d.doctor_id = ds.doctor_id
+   JOIN Specialties s ON ds.specialty_id = s.specialty_id
+   GROUP BY d.doctor_id
+   HAVING specialty_count > 1;
 
-Doctors	Doctor details with contact info
 
-DoctorSpecialty	Links doctors to specialties (M-M)
-
-Patients	Patient records
-
-Appointments	Bookings with status tracking
-
+# Steps to Push to GitHub
+   1. Create a new repository on GitHub (e.g., clinic-booking-db)
+   2. Initialize locally and add files:
+      ```bash
+     mkdir clinic-booking-db
+     cd clinic-booking-db
+     git init
+     git add clinic_booking_system.sql README.md
+     git commit -m "Initial commit: Clinic Booking System database"
+     git remote add origin https://github.com/[your-username]/clinic-booking-db.git
+     git push -u origin main
+     
+   3. Add ERD image:
+      Generate the ERD using dbdiagram.io
+      Upload the ERD image to the repo or include it in the README.md
