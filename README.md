@@ -53,7 +53,7 @@ ______________________________________________________________
    1. Create a new repository on GitHub (e.g., clinic-booking-db)
    2. Initialize locally and add files:
    
-   ```bash
+      ```bash
      mkdir clinic-booking-db
      cd clinic-booking-db
      git init
@@ -62,7 +62,7 @@ ______________________________________________________________
      git remote add origin https://github.com/[your-username]/clinic-booking-db.git
      git push -u origin main
      
-   4. Add ERD image:
+   3. Add ERD image:
       
    **Generate the ERD using dbdiagram.io**
       
