@@ -17,11 +17,9 @@ A MySQL database for managing clinic appointments, doctors, patients, and medica
    
 📂 Schema Overview
 
-Table	                                     Description
-_______________________________________________________________________________
-Specialties	                               Medical fields (e.g., Cardiology)
-_______________________________________________________________________________
-Doctors	                                  Doctor details with contact info
+# Table	                                                    Description
+# Specialties	                                              Medical fields (e.g., Cardiology)
+Doctors	                                                    Doctor details with contact info
 _______________________________________________________________________________
 DoctorSpecialty                            Links doctors to specialties (M-M)
 _______________________________________________________________________________
