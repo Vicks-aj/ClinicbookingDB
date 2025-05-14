@@ -17,18 +17,18 @@ A MySQL database for managing clinic appointments, doctors, patients, and medica
    
 📂 Schema Overview
 
-Table	                Description
-__________________________________________________________
-Specialties	          Medical fields (e.g., Cardiology)
-__________________________________________________________
-Doctors	             Doctor details with contact info
-__________________________________________________________
-DoctorSpecialty       Links doctors to specialties (M-M)
-__________________________________________________________
-Patients	             Patient records
-__________________________________________________________
-Appointments	       Bookings with status tracking
-__________________________________________________________
+Table	                                     Description
+_______________________________________________________________________________
+Specialties	                               Medical fields (e.g., Cardiology)
+_______________________________________________________________________________
+Doctors	                                  Doctor details with contact info
+_______________________________________________________________________________
+DoctorSpecialty                            Links doctors to specialties (M-M)
+_______________________________________________________________________________
+Patients	                                  Patient records
+_______________________________________________________________________________
+Appointments	                            Bookings with status tracking
+_______________________________________________________________________________
 
 🛠️ Query Examples
 1. **View all appointments**:
@@ -57,5 +57,5 @@ __________________________________________________________
      git push -u origin main
      
    3. Add ERD image:
-      Generate the ERD using dbdiagram.io
-      Upload the ERD image to the repo or include it in the README.md
+     **Generate the ERD using dbdiagram.io**
+     **Upload the ERD image to the repo or include it in the README.md**
