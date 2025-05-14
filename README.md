@@ -15,18 +15,20 @@ A MySQL database for managing clinic appointments, doctors, patients, and medica
    ```bash
    mysql -u [your_username] -p < clinic_booking_system.sql
    
-📂 Schema Overview
+# 📂 Schema Overview
 
 # Table	                                                    Description
-# Specialties	                                              Medical fields (e.g., Cardiology)
+________________________________________________________________________________________________
+Specialties	                                                 Medical fields (e.g., Cardiology)
+________________________________________________________________________________________________
 Doctors	                                                    Doctor details with contact info
-_______________________________________________________________________________
-DoctorSpecialty                            Links doctors to specialties (M-M)
-_______________________________________________________________________________
-Patients	                                  Patient records
-_______________________________________________________________________________
-Appointments	                            Bookings with status tracking
-_______________________________________________________________________________
+________________________________________________________________________________________________
+DoctorSpecialty                                              Links doctors to specialties (M-M)
+________________________________________________________________________________________________
+Patients	                                                    Patient records
+________________________________________________________________________________________________
+Appointments	                                              Bookings with status tracking
+________________________________________________________________________________________________
 
 🛠️ Query Examples
 1. **View all appointments**:
@@ -55,5 +57,6 @@ _______________________________________________________________________________
      git push -u origin main
      
    3. Add ERD image:
-     **Generate the ERD using dbdiagram.io**
-     **Upload the ERD image to the repo or include it in the README.md**
+   **Generate the ERD using dbdiagram.io**
+      
+   **Upload the ERD image to the repo or include it in the README.md**
